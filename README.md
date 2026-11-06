@@ -1,18 +1,33 @@
 # Superstore Excel Data Analysis
 
-An end-to-end **Microsoft Excel sales analysis project** using the Sample Superstore dataset. The project focuses on preparing data with Power Query, analyzing performance with PivotTables, and presenting findings through charts.
+An end-to-end **Microsoft Excel sales analysis project** using the Sample Superstore dataset. The project covers data cleaning and preparation, data-quality validation, exploratory analysis, and visual reporting.
 
 ## Project overview
 
-The workbook contains the source data, a cleaned analysis table, PivotTable-based analysis, and charts.
+The original dataset contains **9,994 records and 21 columns**. I used Power Query to prepare the data before analyzing it in Excel. The workbook includes the source data, a cleaned analysis table, PivotTable-based analysis, and charts.
 
-### Analysis included
+## Data cleaning and preparation
+
+Using **Power Query**, I prepared the dataset for analysis by:
+
+- Reviewing the source data and its structure.
+- Correcting column data types.
+- Applying **Trim** and **Clean** to text fields to remove unwanted spaces and non-printable characters.
+- Checking for blank values and duplicate/unique ID issues.
+- Validating row counts and unique order IDs.
+- Checking date consistency between Order Date and Ship Date.
+- Loading the prepared data into Excel for analysis.
+
+## Analysis included
+
+Using PivotTables and PivotCharts, I explored:
 
 - Sales and profit by region
 - Sales by customer segment
 - Sales by shipping mode
 - Monthly sales trends
-- Sales by state
+- Sales by category
+- Sales by state, including top-performing states
 - Top 10 products by sales
 - Profit by product sub-category
 
@@ -29,11 +44,11 @@ The workbook contains the source data, a cleaned analysis table, PivotTable-base
 
 ## Tools and skills
 
-- **Microsoft Excel** — analysis and reporting
-- **Power Query** — data preparation and transformation
-- **PivotTables** — aggregations and comparisons
-- **PivotCharts** — visual presentation
-- **Data validation** — checking row counts, unique IDs, blanks, and date consistency
+- **Microsoft Excel** — data analysis and reporting
+- **Power Query** — data cleaning, text transformation, data-type correction, and preparation
+- **PivotTables** — summarizing, grouping, and comparing sales data
+- **PivotCharts** — visualizing trends and performance
+- **Data validation** — checking row counts, unique IDs, blank values, and date consistency
 
 ## Visual previews
 
