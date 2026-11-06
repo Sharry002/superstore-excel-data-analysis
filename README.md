@@ -1,60 +1,67 @@
-# Superstore Sales Analysis
+# Superstore Excel Data Analysis
 
-## About this project
+An end-to-end **Microsoft Excel sales analysis project** using the Sample Superstore dataset. The project focuses on preparing data with Power Query, analyzing performance with PivotTables, and presenting findings through charts.
 
-I used the Sample Superstore dataset to practise cleaning data in Excel and exploring sales performance. I wanted to take a raw dataset, prepare it for analysis, and see what useful information I could get from it.
+## Project overview
 
-The workbook includes the original data, the cleaned table, PivotTables, and charts.
+The workbook contains the source data, a cleaned analysis table, PivotTable-based analysis, and charts.
 
-## What I worked on
-
-- Cleaned and prepared the data in Power Query.
-- Checked the columns and corrected data types where needed.
-- Used Trim and Clean on text fields.
-- Reviewed the data for blanks and errors.
-- Built PivotTables to compare sales and profit.
-- Created charts to make the results easier to understand.
-
-## Questions explored
-
-I used the PivotTables to look at:
+### Analysis included
 
 - Sales and profit by region
 - Sales by customer segment
 - Sales by shipping mode
 - Monthly sales trends
 - Sales by state
-- Top-selling products
+- Top 10 products by sales
 - Profit by product sub-category
 
-## Dataset at a glance
+## Key figures
 
-- 9,994 rows
-- 21 columns
-- 5,009 unique orders
-- 3 product categories
-- 4 regions
+| Metric | Result |
+|---|---:|
+| Records | 9,994 |
+| Columns | 21 |
+| Unique orders | 5,009 |
+| Units sold | 37,873 |
+| Total sales | $2,297,200.86 |
+| Total profit | $286,397.02 |
 
-## Tools used
+## Tools and skills
 
-- Microsoft Excel
-- Power Query
-- PivotTables
-- PivotCharts
+- **Microsoft Excel** — analysis and reporting
+- **Power Query** — data preparation and transformation
+- **PivotTables** — aggregations and comparisons
+- **PivotCharts** — visual presentation
+- **Data validation** — checking row counts, unique IDs, blanks, and date consistency
 
-## Files in this repository
+## Visual previews
 
-- `Superstore_Data_Analysis.xlsx` — the Excel workbook with the raw data, cleaned data, analysis, and charts.
-- `Analysis_Summary.csv` — a short summary of the main figures.
-- `Data_Quality_Checks.csv` — the checks run on the cleaned table.
-- `Screenshots/` — chart images from the analysis.
+### Sales by region
+![Sales by Region](Screenshots/Sales_by_Region.png)
 
-## A note about data validation
+### Sales by customer segment
+![Sales by Segment](Screenshots/Sales_by_Segment.png)
 
-While checking the dates, I found records where the ship date appears earlier than the order date. I have left the original values unchanged rather than guessing which dates should be corrected. This needs to be checked against the source data before treating the date analysis as final.
+### Profit by sub-category
+![Profit by Sub-Category](Screenshots/Profit_by_SubCategory.png)
+
+### Top 10 products by sales
+![Top 10 Products by Sales](Screenshots/Top_10_Products_by_Sales.png)
+
+## Repository files
+
+- [Excel workbook](Superstore_Data_Analysis.xlsx) — main project file
+- [Analysis summary](Analysis_Summary.csv) — key metrics
+- [Data quality checks](Data_Quality_Checks.csv) — validation results
+- [Screenshots](Screenshots/) — chart previews
+
+## Data quality note
+
+The validation found **1,708 records where Ship Date is earlier than Order Date**. These values were not changed because the correct dates could not be confirmed from the available source. Treat date-based findings with this limitation in mind.
 
 ## Author
 
 **Sandeep Singh**
 
-This is a practice project I completed while building my Excel and data-analysis skills.
+This project was completed as part of my practical learning in Excel and data analysis.
